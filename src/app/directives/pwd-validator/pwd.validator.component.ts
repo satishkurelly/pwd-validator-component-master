@@ -32,7 +32,7 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
   doesSpecialCharacterExist:boolean = false;
   isCharacterRepeating:boolean = false;
   isBlankSpace:boolean = true;
-  isUserNameEqual:boolean = false;
+
 
   constructor() {
   }
