@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+.popover-body {
+  background-color: #c9ecff;
+  font-size: 12px;
+  padding: 10px !important;
+}
+
+
+.popover.right>.arrow:after {
+  border-right-color: #c9ecff;
+
+}
+
+.popover-title {
+  background-color: #1972a2;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+
+.popover{
+border: transparent;
+
+}

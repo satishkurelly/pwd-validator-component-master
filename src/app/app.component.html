@@ -1,12 +1,15 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 <input [value]="username" value="" (input)="username = $event.target.value"
-       [popover]="popTemplate" triggers="focus"  placement="right"  >
+       [popover]="popTemplate" triggers="focus"  placement="right" popoverTitle="Your password must :">
 
 <ng-template #popTemplate>
   <pwd-validator-container #pwd [pwdValue]="username" placement="right"></pwd-validator-container>
 </ng-template>
 
 <p>input :: {{username}}</p>
+
 
