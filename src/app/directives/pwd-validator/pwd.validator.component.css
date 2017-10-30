@@ -1,0 +1,33 @@
+.pwd-validator-container{
+  background-color: red;
+  padding:  10px;
+  width: 200px;
+  height: 100px;
+}
+
+
+
+.fail {
+  color: red;
+}
+
+.success {
+  color: green;
+
+}
+
+.success::before{
+  font-family: FontAwesome;
+  top:0;
+  left:-5px;
+  padding-right:10px;
+  content: "\f05d";
+}
+
+.fail::before {
+  font-family: FontAwesome;
+  top:0;
+  left:-5px;
+  padding-right:10px;
+  content: "\f05c";
+}
