@@ -16,7 +16,6 @@
   margin-bottom: 0px;
 }
 
-
 .popover{
 border: transparent;
 
@@ -24,9 +23,21 @@ border: transparent;
 
 
 
-
-
 /*Accordion Overide*/
 .ui-accordion .ui-accordion-header a {
   background-color: #1972a2;
+  color: #ffffff !important;
 }
+
+.ui-accordion .ui-accordion-header>.fa {
+  left: 98% !important;
+}
+
+.fa-caret-right:before {
+  color: #ffffff;
+}
+
+.fa-caret-down:before{
+  color: #ffffff;
+}
+
