@@ -21,3 +21,12 @@
 border: transparent;
 
 }
+
+
+
+
+
+/*Accordion Overide*/
+.ui-accordion .ui-accordion-header a {
+  background-color: #1972a2;
+}
