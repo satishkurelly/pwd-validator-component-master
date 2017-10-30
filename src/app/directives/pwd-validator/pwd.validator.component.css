@@ -31,3 +31,8 @@
   padding-right:10px;
   content: "\f05c";
 }
+
+
+.popover-content {
+  background-color: darkgray !important;
+}

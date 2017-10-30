@@ -41,7 +41,7 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
   }
 
   ngOnChanges(changes:SimpleChanges) {
-    if (this.pwdValue != undefined ) {
+    if (this.pwdValue != undefined && this.pwdValue.length > 0 ) {
       this.validatePassword();
       this.validatePasswordBasedOnIncludingAtleastOneUppercaseLetter();
       this.validatePasswordBasedOnIncludingAtleastOneLowercaseLetter();
@@ -49,7 +49,9 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
       this.validatePasswordBasedOnIncludingAtleastOneSpecialCharacter();
       this.validatePasswordBasedOnNotRepeatingCharacterMoreThan4Times();
       this.validatePasswordBasedOnNotIncludingBlankSpaces();
-
+      this.canShow = true;
+    }else {
+      this.canShow = false;
     }
 
     this.pwdValid = !this.isLessThan8Chars && this.isLessThan20Chars;
@@ -65,7 +67,7 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
     let character: any;
     while (i < this.pwdValue.length){
       character = this.pwdValue.charAt(i);
-      if (character == character.toUpperCase()) {
+      if (isNaN(character) && character === character.toUpperCase()) {
         this.doesUppercaseCharacterExist = true;
         return;
       }
@@ -79,7 +81,7 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
     let character: any;
     while (i < this.pwdValue.length){
       character = this.pwdValue.charAt(i);
-      if (character == character.toLowerCase()) {
+      if (isNaN(character) && character == character.toLowerCase()) {
         this.doesLowercaseCharacterExist = true;
         return;
       }
