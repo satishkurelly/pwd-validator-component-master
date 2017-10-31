@@ -41,7 +41,7 @@ export class PasswordValidatorContainerComponent implements OnInit,  OnChanges {
       this.validatePasswordBasedOnIncludingAtleastOneUppercaseLetter();
       this.validatePasswordBasedOnIncludingAtleastOneLowercaseLetter();
       this.validatePasswordBasedOnIncludingAtleastOneNumber();
-      this.validatePasswordBasedOnIncludingAtleastOneSpecialCharacter();
+      //this.validatePasswordBasedOnIncludingAtleastOneSpecialCharacter();
       // this.validatePasswordBasedOnNotRepeatingCharacterMoreThan4Times();
       // this.validatePasswordBasedOnNotIncludingBlankSpaces();
 
