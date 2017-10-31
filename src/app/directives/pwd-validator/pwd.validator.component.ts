@@ -2,7 +2,7 @@ import {Component, OnInit, OnChanges, SimpleChanges, Input, Output} from "@angul
 @Component({
   selector: 'pwd-validator-container',
   template: `
-  <div class="marg">
+  <div>
       <div [ngClass]="{'fail' : isLessThan8Chars, 'success': !isLessThan8Chars}">Be at least 8 characters</div>
       <div [ngClass]="{'fail' : !doesLowercaseCharacterExist, 'success': doesLowercaseCharacterExist}">Include at least one lowercase letter</div>
       <div [ngClass]="{'fail' : !doesUppercaseCharacterExist, 'success': doesUppercaseCharacterExist}">Include atleast one uppercase letter</div>
